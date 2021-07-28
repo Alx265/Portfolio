@@ -7,4 +7,7 @@ let swiper = new Swiper(".portfolio-container", {
 	},
 });
 
-
+window.addEventListener("scroll",() => {
+	const navigation = document.querySelector(".main-nav");
+	navigation.classList.toggle("sticky",window.scrollY > 100);
+})

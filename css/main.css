@@ -75,7 +75,7 @@ img {
   height: 50px;
 }
 
-#main-nav {
+.main-nav {
   position: fixed;
   width: 100%;
   display: -webkit-box;
@@ -88,31 +88,33 @@ img {
       justify-content: space-around;
   padding: 1.5rem 0;
   z-index: 10000;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
 }
 
-#main-nav .nav-links {
+.main-nav .nav-links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-#main-nav .nav-links li {
+.main-nav .nav-links li {
   margin-left: 3rem;
   font-weight: 500;
   font-size: 1.2rem;
 }
 
-#main-nav .nav-links li a {
+.main-nav .nav-links li a {
   color: #fff;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
 }
 
-#main-nav .nav-links li a:hover {
+.main-nav .nav-links li a:hover {
   color: #dc143c;
 }
 
-#main-nav .nav-links li a:after {
+.main-nav .nav-links li a:after {
   display: block;
   content: "";
   border-bottom: 2px solid #dc143c;
@@ -124,16 +126,21 @@ img {
   transition: transform 300ms ease-in-out, -webkit-transform 300ms ease-in-out;
 }
 
-#main-nav .nav-links li a:after {
+.main-nav .nav-links li a:after {
   -webkit-transform-origin: 0% 50%;
           transform-origin: 0% 50%;
 }
 
-#main-nav .nav-links li a:hover:after {
+.main-nav .nav-links li a:hover:after {
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
   -webkit-transform-origin: 100% 50%;
           transform-origin: 100% 50%;
+}
+
+.sticky {
+  background-color: #111;
+  padding: 0.5rem 0;
 }
 
 #header-home {
