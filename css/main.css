@@ -316,4 +316,39 @@ img {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 }
+
+#portfolio {
+  padding: 7rem 0;
+}
+
+#portfolio .portfolio {
+  text-align: center;
+  position: relative;
+  font-size: 3rem;
+}
+
+#portfolio .portfolio::before {
+  content: "";
+  position: absolute;
+  width: 15.5rem;
+  bottom: -8px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  height: 0.2rem;
+  background: #111;
+}
+
+#portfolio .portfolio::after {
+  content: "My projects";
+  position: absolute;
+  bottom: -22px;
+  font-size: 1.2rem;
+  color: #dc143c;
+  left: 50%;
+  padding: 0.1rem 0.3rem;
+  background: #fff;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
 /*# sourceMappingURL=main.css.map */

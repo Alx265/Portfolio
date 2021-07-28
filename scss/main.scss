@@ -231,4 +231,35 @@ img {
     transform: translateX(-50%);
   }
 }
+// Portfolio section style
+#portfolio {
+  padding: 7rem 0;
+  .portfolio {
+    text-align: center;
+    position: relative;
+    font-size: 3rem;
+  }
+  .portfolio::before {
+    content: "";
+    position: absolute;
+    width: 15.5rem;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 0.2rem;
+    background: $dark-color;
+  }
+  .portfolio::after {
+    content: "My projects";
+    position: absolute;
+    bottom: -22px;
+    font-size: 1.2rem;
+    color: $main-color;
+    left: 50%;
+    padding: 0.1rem 0.3rem;
+    background: $light-color;
+    transform: translateX(-50%);
+  }
+}
+
 @import "media";
