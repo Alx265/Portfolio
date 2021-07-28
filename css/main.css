@@ -5,7 +5,7 @@
   overflow: hidden;
 }
 
-.btn-header, .btn-about {
+.btn-header, .btn-about, .btn-portfolio {
   display: inline-block;
   padding: 0.8rem 2rem;
   -webkit-transition: all 0.5s;
@@ -27,6 +27,12 @@
   background-color: #dc143c;
   color: #fff;
   margin-top: 4rem;
+}
+
+.btn-portfolio {
+  background-color: #dc143c;
+  color: #fff;
+  margin-top: 1rem;
 }
 
 .text-color {
@@ -350,5 +356,82 @@ img {
   background: #fff;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+}
+
+#portfolio .btn-portfolio:hover {
+  background-color: #960e29;
+}
+
+#portfolio .btn-portfolio:hover i {
+  -webkit-transform: translateX(0.5rem);
+          transform: translateX(0.5rem);
+}
+
+#portfolio .portfolio-container {
+  overflow: initial;
+  margin-top: 6rem;
+}
+
+#portfolio .portfolio-container .swiper-button-prev::after,
+#portfolio .portfolio-container .swiper-button-next::after {
+  content: "";
+}
+
+#portfolio .portfolio-container .swiper-button-prev {
+  left: -0.5rem;
+}
+
+#portfolio .portfolio-container .swiper-button-next {
+  right: 0.5rem;
+}
+
+#portfolio .portfolio-container .swiper-portfolio-icon {
+  font-size: 3rem;
+  color: #dc143c;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+#portfolio .portfolio-container .swiper-portfolio-icon:hover {
+  color: #960e29;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+#portfolio .portfolio-container .portfolio-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#portfolio .portfolio-container .portfolio-content .portfolio-info {
+  margin: 1rem 0;
+}
+
+#portfolio .portfolio-container .portfolio-content .portfolio-info .portfolio-description {
+  max-width: 90%;
+  margin: 1.5rem 0;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+#portfolio .portfolio-container .portfolio-content .portfolio-info .btn-portfolio i {
+  margin-left: 0.3rem;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+#portfolio .portfolio-container .portfolio-content .portfolio-info .portfolio-title {
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+
+#portfolio .portfolio-container .portfolio-content .portfolio-img {
+  width: 400px;
+  height: 300px;
+  border-radius: 8px;
+  margin: 0 5rem;
+  -ms-grid-column-align: center;
+      justify-self: center;
 }
 /*# sourceMappingURL=main.css.map */

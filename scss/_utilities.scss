@@ -29,6 +29,12 @@
     color: $light-color;
     margin-top: 4rem;
   }
+  &-portfolio {
+    @extend %btn-config;
+    background-color: $main-color;
+    color: $light-color;
+    margin-top: 1rem;
+  }
 }
 
 .text-color {
