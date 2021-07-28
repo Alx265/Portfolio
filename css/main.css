@@ -39,6 +39,42 @@
   color: #dc143c;
 }
 
+.to-top {
+  background: #dc143c;
+  position: fixed;
+  bottom: 16px;
+  right: 32px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 2rem;
+  color: #fff;
+  text-decoration: none;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.to-top:hover {
+  background-color: #ad102f;
+}
+
+.to-top.active {
+  bottom: 2.5rem;
+  pointer-events: auto;
+  opacity: 1;
+}
+
 *,
 ::before,
 ::after {
