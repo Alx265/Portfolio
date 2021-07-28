@@ -1,0 +1,25 @@
+.container {
+  max-width: $website-width;
+  padding: 0 1.5rem;
+  margin: auto;
+  overflow: hidden;
+}
+
+%btn-config {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  transition: all 0.5s;
+  border: none;
+  cursor: pointer;
+}
+
+.btn {
+  &-header {
+    @extend %btn-config;
+    background-color: $main-color;
+    color: $light-color;
+    margin-top: 1.5rem;
+    border-radius: 8px;
+    font-weight: 500;
+  }
+}

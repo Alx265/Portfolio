@@ -4,10 +4,49 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/7e577ef14f.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="/css/main.css" />
     <title>Marcin Wawreczko | Front end developer | MyPortfolio</title>
   </head>
   <body>
+    <header id="header-home">
+      <nav id="main-nav">
+        <a href="#"><img src="/img/logo.svg" alt="Logo" id="logo" /></a>
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Skills</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="container">
+        <div id="header-content">
+          <div class="text-hello">Hello, my name is</div>
+          <div class="text-name">Marcin Wawreczko</div>
+          <div class="text-frontend">
+            And I'm a <span class="text-color">front-end developer</span>
+          </div>
+          <a href="#" class="btn-header">Contact me</a>
+
+          <div id="header-social">
+            <p class="social-text">Check my</p>
+            <a href="#"><i class="fab fa-github fa-2x"></i></a>
+            <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+            <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+          </div>
+        </div>
+      </div>
+    </header>
     <script src="/js/main.js"></script>
   </body>
 </html>

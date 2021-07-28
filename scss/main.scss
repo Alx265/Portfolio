@@ -1,3 +1,126 @@
-body {
-  background-color: black;
+@import "variables";
+@import "utilities";
+
+// CSS reset
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $font-stack;
+  line-height: 1.6;
+  background-color: $light-color;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+#logo {
+  width: 50px;
+  height: 50px;
+}
+
+// Navigation style
+#main-nav {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1.5rem 0;
+  z-index: 10000;
+  .nav-links {
+    display: flex;
+    li {
+      margin-left: 3rem;
+      font-weight: 500;
+      font-size: 1.1rem;
+      a {
+        color: $light-color;
+        transition: all 0.4s ease;
+      }
+      a:hover {
+        color: $main-color;
+      }
+      a:after {
+        display: block;
+        content: "";
+        border-bottom: 2px solid $main-color;
+        transform: scaleX(0);
+        transition: transform 300ms ease-in-out;
+      }
+      a:after {
+        transform-origin: 0% 50%;
+      }
+      a:hover:after {
+        transform: scaleX(1);
+        transform-origin: 100% 50%;
+      }
+    }
+  }
+}
+
+// Header landing page style
+#header {
+  &-home {
+    background: $bg-image no-repeat center right / cover;
+    height: 100vh;
+  }
+  &-content {
+    color: $light-color;
+    padding-top: 28%;
+    padding-left: 8%;
+    line-height: 1.3;
+    .text-hello {
+      font-size: 2.3rem;
+    }
+    .text-name {
+      font-size: 4rem;
+      margin-left: 1rem;
+    }
+    .text-frontend {
+      font-size: 2.7rem;
+      .text-color {
+        color: $main-color;
+      }
+    }
+    .btn-header:hover {
+      background-color: $light-color;
+      color: $dark-color;
+    }
+  }
+  &-social {
+    padding-top: 25%;
+    display: flex;
+    align-items: center;
+    .social-text {
+      font-size: 1.3rem;
+      font-weight: 500;
+    }
+    i {
+      margin-left: 1rem;
+      color: $light-color;
+      transition: all 0.4s ease;
+    }
+    i:hover {
+      color: $main-color;
+    }
+  }
+}
+
+@import "media";
