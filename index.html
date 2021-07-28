@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="My portfolio website" />
+    <meta name="keywords" content="Portfolio, Marcin Wawreczko, website" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -18,12 +20,13 @@
     <title>Marcin Wawreczko | Front end developer | MyPortfolio</title>
   </head>
   <body>
+    <!-- Header -->
     <header id="header-home">
       <nav id="main-nav">
         <a href="#"><img src="/img/logo.svg" alt="Logo" id="logo" /></a>
         <ul class="nav-links">
           <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
+          <li><a href="#about">About</a></li>
           <li><a href="#">Skills</a></li>
           <li><a href="#">Projects</a></li>
           <li><a href="#">Contact</a></li>
@@ -34,7 +37,7 @@
           <div class="text-hello">Hello, my name is</div>
           <div class="text-name">Marcin Wawreczko</div>
           <div class="text-frontend">
-            And I'm a <span class="text-color">front-end developer</span>
+            And I'am <span class="text-color">front-end developer</span>
           </div>
           <a href="#" class="btn-header">Contact me</a>
 
@@ -47,6 +50,37 @@
         </div>
       </div>
     </header>
+
+    <!-- About section -->
+    <section id="about">
+      <div class="container">
+        <h1 class="about-me">About me</h1>
+        <div class="about-info">
+          <div class="about-photo">
+            <img
+              src="https://source.unsplash.com/user/erondu/daily"
+              alt="My photo"
+              class="my-photo"
+            />
+          </div>
+          <div class="about-text">
+            <h2>
+              My name is Marcin Wawreczko and I'am
+              <span class="text-color">front-end developer</span>
+            </h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam in
+              repellat laudantium voluptatibus voluptatum accusamus illo harum,
+              fugiat quasi deserunt architecto nisi molestiae rerum molestias
+              consectetur tenetur reprehenderit blanditiis tempora.
+            </p>
+            <a href="#" class="btn-about"
+              >Download CV <i class="fas fa-download"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
     <script src="/js/main.js"></script>
   </body>
 </html>
