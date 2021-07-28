@@ -49,7 +49,7 @@ img {
     li {
       margin-left: 3rem;
       font-weight: 500;
-      font-size: 1.1rem;
+      font-size: 1.2rem;
       a {
         color: $light-color;
         transition: all 0.4s ease;
@@ -122,7 +122,7 @@ img {
 
 // About section style
 #about {
-  padding: 7rem;
+  padding: 7rem 0;
   .about-me {
     text-align: center;
     position: relative;
@@ -172,9 +172,63 @@ img {
         font-weight: 500;
       }
       .btn-about:hover {
-        background-color: darken($main-color, 10%);
+        background-color: darken($main-color, 15%);
       }
     }
+  }
+}
+
+// Skills section style
+#skills {
+  padding: 7rem 0;
+  background-color: $dark-color;
+  .items-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .items {
+      color: $light-color;
+      margin-top: 4rem;
+      max-width: 200px;
+      margin: 7rem;
+      margin-bottom: 0;
+      p {
+        margin-top: 1rem;
+        text-align: center;
+        font-size: 1.2rem;
+        font-weight: 500;
+      }
+      i {
+        font-size: 6rem;
+      }
+    }
+  }
+  .skills {
+    text-align: center;
+    position: relative;
+    font-size: 3rem;
+    color: $light-color;
+  }
+  .skills::before {
+    content: "";
+    position: absolute;
+    width: 15.5rem;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 0.2rem;
+    background: $light-color;
+  }
+  .skills::after {
+    content: "What i know";
+    position: absolute;
+    bottom: -22px;
+    font-size: 1.2rem;
+    color: $main-color;
+    left: 50%;
+    padding: 0.1rem 0.3rem;
+    background: $dark-color;
+    transform: translateX(-50%);
   }
 }
 @import "media";

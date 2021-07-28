@@ -93,7 +93,7 @@ img {
 #main-nav .nav-links li {
   margin-left: 3rem;
   font-weight: 500;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
 
 #main-nav .nav-links li a {
@@ -187,7 +187,7 @@ img {
 }
 
 #about {
-  padding: 7rem;
+  padding: 7rem 0;
 }
 
 #about .about-me {
@@ -247,6 +247,73 @@ img {
 }
 
 #about .about-info .about-text .btn-about:hover {
-  background-color: #ad102f;
+  background-color: #960e29;
+}
+
+#skills {
+  padding: 7rem 0;
+  background-color: #111;
+}
+
+#skills .items-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#skills .items-container .items {
+  color: #fff;
+  margin-top: 4rem;
+  max-width: 200px;
+  margin: 7rem;
+  margin-bottom: 0;
+}
+
+#skills .items-container .items p {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+#skills .items-container .items i {
+  font-size: 6rem;
+}
+
+#skills .skills {
+  text-align: center;
+  position: relative;
+  font-size: 3rem;
+  color: #fff;
+}
+
+#skills .skills::before {
+  content: "";
+  position: absolute;
+  width: 15.5rem;
+  bottom: -8px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  height: 0.2rem;
+  background: #fff;
+}
+
+#skills .skills::after {
+  content: "What i know";
+  position: absolute;
+  bottom: -22px;
+  font-size: 1.2rem;
+  color: #dc143c;
+  left: 50%;
+  padding: 0.1rem 0.3rem;
+  background: #111;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 /*# sourceMappingURL=main.css.map */
