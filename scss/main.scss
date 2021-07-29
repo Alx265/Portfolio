@@ -79,6 +79,7 @@ img {
 .sticky {
   background-color: $dark-color;
   padding: 0.5rem 0;
+  box-shadow: 0 3px 5px -4px $light-color;
 }
 
 // Header landing page style
@@ -326,6 +327,39 @@ img {
         justify-self: center;
       }
     }
+  }
+}
+
+// Section contact style
+#contact {
+  padding: 9rem 0;
+  background-color: $dark-color;
+  .contact-me {
+    text-align: center;
+    position: relative;
+    font-size: 3rem;
+    color: $light-color;
+  }
+  .contact-me::before {
+    content: "";
+    position: absolute;
+    width: 15.5rem;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 0.2rem;
+    background: $light-color;
+  }
+  .contact-me::after {
+    content: "Keep in touch";
+    position: absolute;
+    bottom: -22px;
+    font-size: 1.2rem;
+    color: $main-color;
+    left: 50%;
+    padding: 0.1rem 0.3rem;
+    background-color: $dark-color;
+    transform: translateX(-50%);
   }
 }
 @import "media";

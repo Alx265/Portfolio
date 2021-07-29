@@ -177,6 +177,8 @@ img {
 .sticky {
   background-color: #111;
   padding: 0.5rem 0;
+  -webkit-box-shadow: 0 3px 5px -4px #fff;
+          box-shadow: 0 3px 5px -4px #fff;
 }
 
 #header-home {
@@ -478,5 +480,42 @@ img {
   margin: 0 5rem;
   -ms-grid-column-align: center;
       justify-self: center;
+}
+
+#contact {
+  padding: 9rem 0;
+  background-color: #111;
+}
+
+#contact .contact-me {
+  text-align: center;
+  position: relative;
+  font-size: 3rem;
+  color: #fff;
+}
+
+#contact .contact-me::before {
+  content: "";
+  position: absolute;
+  width: 15.5rem;
+  bottom: -8px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  height: 0.2rem;
+  background: #fff;
+}
+
+#contact .contact-me::after {
+  content: "Keep in touch";
+  position: absolute;
+  bottom: -22px;
+  font-size: 1.2rem;
+  color: #dc143c;
+  left: 50%;
+  padding: 0.1rem 0.3rem;
+  background-color: #111;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 /*# sourceMappingURL=main.css.map */

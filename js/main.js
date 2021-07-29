@@ -27,7 +27,7 @@ window.addEventListener("scroll", () => {
 
 
 
-// Animations
+// Animation basic
 const sr = ScrollReveal({
 	distance: '300px',
 	duration: 1500,
