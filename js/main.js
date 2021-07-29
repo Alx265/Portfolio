@@ -26,6 +26,9 @@ window.addEventListener("scroll", () => {
 });
 
 
+// Navigation
+
+
 
 // Animation basic
 const sr = ScrollReveal({
