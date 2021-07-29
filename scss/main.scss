@@ -365,30 +365,49 @@ img {
     background-color: $dark-color;
     transform: translateX(-50%);
   }
-  .contact-container {
-    padding-top: 4rem;
-    .contact-info {
-      display: flex;
-      align-items: center;
-      color: $light-color;
-      margin: 4rem 0;
-      .contact-icon {
-        margin-right: 1.5rem;
-        color: $main-color;
+
+  .contact-wrapper {
+    display: flex;
+    justify-content: space-around;
+    .contact-container {
+      padding-top: 4rem;
+      .contact-info {
+        display: flex;
+        align-items: center;
+        color: $light-color;
+        margin: 4rem 0;
+        .contact-icon {
+          margin-right: 1.5rem;
+          color: $main-color;
+        }
+        .contact-text {
+          h6 {
+            font-size: 1.4rem;
+            font-weight: 500;
+          }
+          p {
+            font-size: 1.2rem;
+            font-weight: 500;
+          }
+        }
       }
-      .contact-text {
-        h6 {
-          font-size: 1.4rem;
-          font-weight: 500;
-        }
-        p {
-          font-size: 1.2rem;
-          font-weight: 500;
-        }
+      .contact-info:last-child {
+        margin: 0;
       }
     }
-    .contact-info:last-child {
-      margin: 0;
+    .contact-form-container {
+      padding-top: 4rem;
+      #contact-form {
+        input {
+          display: block;
+        }
+      }
+      h6 {
+        margin-top: 4rem;
+        color: $light-color;
+        font-size: 1.4rem;
+        font-weight: 500;
+      }
     }
   }
 }

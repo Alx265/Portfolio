@@ -222,33 +222,67 @@
     <section id="contact">
       <div class="container">
         <h5 class="contact-me">Contact me</h5>
-        <div class="contact-container">
-          <div class="contact-info">
-            <div class="contact-icon">
-              <i class="fas fa-phone-alt fa-2x"></i>
+        <div class="contact-wrapper">
+          <div class="contact-container">
+            <div class="contact-info">
+              <div class="contact-icon">
+                <i class="fas fa-phone-alt fa-2x"></i>
+              </div>
+              <div class="contact-text">
+                <h6>Call me</h6>
+                <p>+48 449 499 929</p>
+              </div>
             </div>
-            <div class="contact-text">
-              <h6>Call me</h6>
-              <p>+48 449 499 929</p>
+            <div class="contact-info">
+              <div class="contact-icon">
+                <i class="fas fa-envelope fa-2x"></i>
+              </div>
+              <div class="contact-text">
+                <h6>Email</h6>
+                <p>mwawreczko265@gmail.com</p>
+              </div>
+            </div>
+            <div class="contact-info">
+              <div class="contact-icon">
+                <i class="fas fa-map-marker-alt fa-2x"></i>
+              </div>
+              <div class="contact-text">
+                <h6>Location</h6>
+                <p>Poland, Rybnik</p>
+              </div>
             </div>
           </div>
-          <div class="contact-info">
-            <div class="contact-icon">
-              <i class="fas fa-envelope fa-2x"></i>
-            </div>
-            <div class="contact-text">
-              <h6>Email</h6>
-              <p>mwawreczko265@gmail.com</p>
-            </div>
-          </div>
-          <div class="contact-info">
-            <div class="contact-icon">
-              <i class="fas fa-map-marker-alt fa-2x"></i>
-            </div>
-            <div class="contact-text">
-              <h6>Address</h6>
-              <p>Poland, Rybnik</p>
-            </div>
+          <div class="contact-form-container">
+            <h6>Message me</h6>
+            <form id="contact-form">
+              <input
+                type="text"
+                name="name"
+                id="name"
+                autocomplete="off"
+                placeholder="Name"
+              />
+              <input
+                type="email"
+                name="email"
+                id="email"
+                autocomplete="off"
+                placeholder="Email"
+              />
+              <input
+                type="text"
+                name="subject"
+                id="subject"
+                autocomplete="off"
+                placeholder="Subject"
+              />
+              <textarea
+                name="message"
+                id="message"
+                placeholder="Message"
+              ></textarea>
+              <input type="submit" value="Send message" class="btn-light" />
+            </form>
           </div>
         </div>
       </div>
