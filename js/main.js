@@ -1,3 +1,4 @@
+// Portfolio swiper
 let swiper = new Swiper(".portfolio-container", {
 	cssMode: true,
 	loop:true,
@@ -7,14 +8,15 @@ let swiper = new Swiper(".portfolio-container", {
 	},
 });
 
+// Navigation scroll
 window.addEventListener("scroll",() => {
 	const navigation = document.querySelector(".main-nav");
 	navigation.classList.toggle("sticky",window.scrollY > 100);
 })
 
   
+// toTop button
 const toTop = document.querySelector(".to-top");
-
 window.addEventListener("scroll", () => {
 	if(window.pageYOffset > 100) {
 		toTop.classList.add("active");
