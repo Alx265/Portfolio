@@ -480,6 +480,13 @@ img {
   margin: 0 5rem;
   -ms-grid-column-align: center;
       justify-self: center;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#portfolio .portfolio-container .portfolio-content .portfolio-img:hover {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
 }
 
 #contact {
@@ -517,5 +524,39 @@ img {
   background-color: #111;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+}
+
+#contact .contact-container {
+  padding-top: 4rem;
+}
+
+#contact .contact-container .contact-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  margin: 4rem 0;
+}
+
+#contact .contact-container .contact-info .contact-icon {
+  margin-right: 1.5rem;
+  color: #dc143c;
+}
+
+#contact .contact-container .contact-info .contact-text h6 {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+#contact .contact-container .contact-info .contact-text p {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+#contact .contact-container .contact-info:last-child {
+  margin: 0;
 }
 /*# sourceMappingURL=main.css.map */
