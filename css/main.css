@@ -43,6 +43,20 @@
   color: #dc143c;
 }
 
+.toggle .line1 {
+  -webkit-transform: rotate(-45deg) translate(-5px, 6px);
+          transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+  opacity: 0;
+}
+
+.toggle .line3 {
+  -webkit-transform: rotate(45deg) translate(-5px, -6px);
+          transform: rotate(45deg) translate(-5px, -6px);
+}
+
 .to-top {
   background: #dc143c;
   position: fixed;
@@ -88,6 +102,32 @@
   padding: 0;
 }
 
+@-webkit-keyframes navLinkFade {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -130,6 +170,20 @@ img {
   z-index: 10000;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
+}
+
+.main-nav .burger {
+  display: none;
+  cursor: pointer;
+}
+
+.main-nav .burger div {
+  width: 25px;
+  height: 3px;
+  margin: 5px;
+  background-color: #fff;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .main-nav .nav-links {
@@ -177,19 +231,6 @@ img {
           transform: scaleX(1);
   -webkit-transform-origin: 100% 50%;
           transform-origin: 100% 50%;
-}
-
-.hamburger div {
-  width: 30px;
-  height: 3px;
-  background: #f2f5f7;
-  margin: 5px;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-
-.hamburger {
-  display: none;
 }
 
 .sticky {
@@ -658,22 +699,6 @@ img {
   padding: 0.5rem;
 }
 
-.toggle .line1 {
-  -webkit-transform: rotate(-45deg) translate(-5px, 6px);
-          transform: rotate(-45deg) translate(-5px, 6px);
-}
-
-.toggle .line2 {
-  -webkit-transition: all 0.7s ease;
-  transition: all 0.7s ease;
-  width: 0;
-}
-
-.toggle .line3 {
-  -webkit-transform: rotate(45deg) translate(-5px, -6px);
-          transform: rotate(45deg) translate(-5px, -6px);
-}
-
 @media (max-width: 1025px) {
   #about .about-info {
     -ms-grid-columns: (1fr)[1];
@@ -713,6 +738,72 @@ img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+}
+
+@media (max-width: 590px) {
+  #logo {
+    margin-left: 1rem;
+  }
+  #header-home .main-nav {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  #header-home .main-nav .nav-links {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #111;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    -webkit-transition: -webkit-transform 0.5s ease-in;
+    transition: -webkit-transform 0.5s ease-in;
+    transition: transform 0.5s ease-in;
+    transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
+  }
+  #header-home .main-nav li {
+    margin: 0;
+    padding-top: 6rem;
+    opacity: 0;
+  }
+  #header-home .main-nav .burger {
+    margin-right: 1rem;
+    display: block;
+    z-index: 100000;
+  }
+  #header-home .main-nav .nav-active {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  #header-content {
+    padding-top: 90%;
+  }
+  #header-content .text-hello {
+    font-size: 1.3rem;
+  }
+  #header-content .text-name {
+    font-size: 2.3rem;
+    margin-left: 1rem;
+  }
+  #header-content .text-frontend {
+    font-size: 1.7rem;
+  }
+  #header-social {
+    padding-top: 60%;
   }
 }
 /*# sourceMappingURL=main.css.map */

@@ -48,5 +48,58 @@
 }
 
 // Smaller screens
-@media (max-width: 580px) {
+@media (max-width: 590px) {
+  #logo {
+    margin-left: 1rem;
+  }
+  #header {
+    &-home {
+      .main-nav {
+        justify-content: space-between;
+        .nav-links {
+          position: absolute;
+          right: 0;
+          top: 0;
+          width: 100%;
+          height: 100vh;
+          background-color: $dark-color;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+          transform: translateX(100%);
+          transition: transform 0.5s ease-in;
+        }
+        li {
+          margin: 0;
+          padding-top: 6rem;
+          opacity: 0;
+        }
+        .burger {
+          margin-right: 1rem;
+          display: block;
+          z-index: 100000;
+        }
+        .nav-active {
+          transform: translateX(0%);
+        }
+      }
+    }
+    &-content {
+      padding-top: 90%;
+      .text-hello {
+        font-size: 1.3rem;
+      }
+      .text-name {
+        font-size: 2.3rem;
+        margin-left: 1rem;
+      }
+      .text-frontend {
+        font-size: 1.7rem;
+      }
+    }
+    &-social {
+      padding-top: 60%;
+    }
+  }
 }
