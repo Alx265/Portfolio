@@ -122,7 +122,7 @@ img {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  padding: 1.5rem 0;
+  padding: 2rem 0;
   z-index: 10000;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
@@ -236,7 +236,7 @@ img {
 }
 
 #about {
-  padding: 7rem 0;
+  padding: 9rem 0;
 }
 
 #about .about-me {
@@ -300,7 +300,7 @@ img {
 }
 
 #skills {
-  padding: 7rem 0;
+  padding: 9rem 0;
   background-color: #111;
 }
 
@@ -315,7 +315,7 @@ img {
           justify-content: center;
 }
 
-#skills .items-container .items {
+#skills .items-container .item {
   color: #fff;
   margin-top: 4rem;
   max-width: 200px;
@@ -323,14 +323,14 @@ img {
   margin-bottom: 0;
 }
 
-#skills .items-container .items p {
+#skills .items-container .item p {
   margin-top: 1rem;
   text-align: center;
   font-size: 1.2rem;
   font-weight: 500;
 }
 
-#skills .items-container .items i {
+#skills .items-container .item i {
   font-size: 6rem;
 }
 
@@ -367,7 +367,7 @@ img {
 }
 
 #portfolio {
-  padding: 7rem 0;
+  padding: 9rem 0;
 }
 
 #portfolio .portfolio {

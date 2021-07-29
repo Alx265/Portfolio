@@ -43,7 +43,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  padding: 1.5rem 0;
+  padding: 2rem 0;
   z-index: 10000;
   transition: all 0.4s ease;
   .nav-links {
@@ -128,7 +128,7 @@ img {
 
 // About section style
 #about {
-  padding: 7rem 0;
+  padding: 9rem 0;
   .about-me {
     text-align: center;
     position: relative;
@@ -186,13 +186,14 @@ img {
 
 // Skills section style
 #skills {
-  padding: 7rem 0;
+  padding: 9rem 0;
   background-color: $dark-color;
+
   .items-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    .items {
+    .item {
       color: $light-color;
       margin-top: 4rem;
       max-width: 200px;
@@ -212,6 +213,7 @@ img {
   .skills {
     text-align: center;
     position: relative;
+
     font-size: 3rem;
     color: $light-color;
   }
@@ -239,7 +241,7 @@ img {
 }
 // Portfolio section style
 #portfolio {
-  padding: 7rem 0;
+  padding: 9rem 0;
   .portfolio {
     text-align: center;
     position: relative;
