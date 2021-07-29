@@ -29,7 +29,7 @@ window.addEventListener("scroll", () => {
 
 // Animation basic
 const sr = ScrollReveal({
-	distance: '300px',
+	distance: '500px',
 	duration: 1500,
 	reset: true
 })
@@ -54,6 +54,16 @@ sr.reveal('.items-container', {origin:'right',delay: 800});
 sr.reveal('.portfolio', {origin:'top'});;
 sr.reveal('.portfolio-container', {origin:'bottom',delay: 800});
 
-
+// Contact
+sr.reveal('.contact-me', {origin:'top'});;
+sr.reveal('#header-contact-transform', {origin:'right',delay: 500});
+sr.reveal('.first', {origin:'left',delay: 800});
+sr.reveal('.second', {origin:'left',delay: 1200});
+sr.reveal('.three', {origin:'left',delay: 1600});
+sr.reveal('#name', {origin:'right',delay: 800});
+sr.reveal('#email', {origin:'right',delay: 1200});
+sr.reveal('#subject', {origin:'right',delay: 1600});
+sr.reveal('#message', {origin:'right',delay: 2000});
+sr.reveal('#btn-transform', {origin:'bottom',delay: 2400});
 
 

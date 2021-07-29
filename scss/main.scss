@@ -398,8 +398,49 @@ img {
     .contact-form-container {
       padding-top: 4rem;
       #contact-form {
-        input {
+        padding-top: 1rem;
+        input,
+        textarea {
+          border: none;
+          outline: none;
+          padding: 1rem 1.5rem;
+          margin-top: 1rem;
+          border-radius: 8px;
+          background-color: darken($light-color, 11%);
+          font-size: 1rem;
+          color: $dark-color;
+        }
+        input:focus,
+        textarea:focus {
+          box-shadow: 0 0 0.3rem 0.1rem $main-color;
+        }
+
+        .btn-form {
+          background-color: $main-color;
+          color: $light-color;
+        }
+
+        #email {
+          margin-left: 2rem;
+        }
+        #message {
+          resize: none;
+          height: 150px;
+        }
+
+        #subject,
+        #message {
+          margin: 2rem 0;
           display: block;
+          width: 100%;
+        }
+        .btn-form {
+          transition: all 0.4s ease;
+          font-weight: 500;
+          font-size: 1.2rem;
+        }
+        .btn-form:hover {
+          background-color: darken($main-color, 15%);
         }
       }
       h6 {

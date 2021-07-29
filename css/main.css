@@ -5,7 +5,7 @@
   overflow: hidden;
 }
 
-.btn-header, .btn-about, .btn-portfolio {
+.btn-header, .btn-about, .btn-portfolio, .btn-form {
   display: inline-block;
   padding: 0.8rem 2rem;
   -webkit-transition: all 0.5s;
@@ -32,6 +32,10 @@
 .btn-portfolio {
   background-color: #dc143c;
   color: #fff;
+  margin-top: 1rem;
+}
+
+.btn-form {
   margin-top: 1rem;
 }
 
@@ -572,8 +576,58 @@ img {
   padding-top: 4rem;
 }
 
-#contact .contact-wrapper .contact-form-container #contact-form input {
+#contact .contact-wrapper .contact-form-container #contact-form {
+  padding-top: 1rem;
+}
+
+#contact .contact-wrapper .contact-form-container #contact-form input,
+#contact .contact-wrapper .contact-form-container #contact-form textarea {
+  border: none;
+  outline: none;
+  padding: 1rem 1.5rem;
+  margin-top: 1rem;
+  border-radius: 8px;
+  background-color: #e3e3e3;
+  font-size: 1rem;
+  color: #111;
+}
+
+#contact .contact-wrapper .contact-form-container #contact-form input:focus,
+#contact .contact-wrapper .contact-form-container #contact-form textarea:focus {
+  -webkit-box-shadow: 0 0 0.3rem 0.1rem #dc143c;
+          box-shadow: 0 0 0.3rem 0.1rem #dc143c;
+}
+
+#contact .contact-wrapper .contact-form-container #contact-form .btn-form {
+  background-color: #dc143c;
+  color: #fff;
+}
+
+#contact .contact-wrapper .contact-form-container #contact-form #email {
+  margin-left: 2rem;
+}
+
+#contact .contact-wrapper .contact-form-container #contact-form #message {
+  resize: none;
+  height: 150px;
+}
+
+#contact .contact-wrapper .contact-form-container #contact-form #subject,
+#contact .contact-wrapper .contact-form-container #contact-form #message {
+  margin: 2rem 0;
   display: block;
+  width: 100%;
+}
+
+#contact .contact-wrapper .contact-form-container #contact-form .btn-form {
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+#contact .contact-wrapper .contact-form-container #contact-form .btn-form:hover {
+  background-color: #960e29;
 }
 
 #contact .contact-wrapper .contact-form-container h6 {

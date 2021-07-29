@@ -35,6 +35,10 @@
     color: $light-color;
     margin-top: 1rem;
   }
+  &-form {
+    @extend %btn-config;
+    margin-top: 1rem;
+  }
 }
 
 .text-color {
