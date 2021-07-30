@@ -136,7 +136,7 @@ img {
     }
   }
   &-social {
-    padding-top: 25%;
+    padding-top: 5%;
     display: flex;
     align-items: center;
     .social-text {
@@ -174,7 +174,7 @@ img {
     background: $light-color;
   }
   .about-me::after {
-    content: "My introduction";
+    content: "Who i am";
     position: absolute;
     bottom: -22px;
     font-size: 1.2rem;
