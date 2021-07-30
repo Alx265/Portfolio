@@ -30,7 +30,8 @@ html {
 body {
   font-family: $font-stack;
   line-height: 1.6;
-  background-color: $light-color;
+  background-color: $lighter-dark-color;
+  color: $light-color;
 }
 
 a {
@@ -170,7 +171,7 @@ img {
     left: 50%;
     transform: translateX(-50%);
     height: 0.2rem;
-    background: $dark-color;
+    background: $light-color;
   }
   .about-me::after {
     content: "My introduction";
@@ -180,7 +181,7 @@ img {
     color: $main-color;
     left: 50%;
     padding: 0.1rem 0.3rem;
-    background: $light-color;
+    background: $lighter-dark-color;
     transform: translateX(-50%);
   }
   .about-info {
@@ -239,7 +240,6 @@ img {
   .skills {
     text-align: center;
     position: relative;
-
     font-size: 3rem;
     color: $light-color;
   }
@@ -281,7 +281,7 @@ img {
     left: 50%;
     transform: translateX(-50%);
     height: 0.2rem;
-    background: $dark-color;
+    background: $light-color;
   }
   .portfolio::after {
     content: "My projects";
@@ -291,7 +291,7 @@ img {
     color: $main-color;
     left: 50%;
     padding: 0.1rem 0.3rem;
-    background: $light-color;
+    background: $lighter-dark-color;
     transform: translateX(-50%);
   }
   .btn-portfolio:hover {

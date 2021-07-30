@@ -135,7 +135,8 @@ html {
 body {
   font-family: "Ubuntu", sans-serif;
   line-height: 1.6;
-  background-color: #fff;
+  background-color: #222;
+  color: #fff;
 }
 
 a {
@@ -317,7 +318,7 @@ img {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   height: 0.2rem;
-  background: #111;
+  background: #fff;
 }
 
 #about .about-me::after {
@@ -328,7 +329,7 @@ img {
   color: #dc143c;
   left: 50%;
   padding: 0.1rem 0.3rem;
-  background: #fff;
+  background: #222;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 }
@@ -448,7 +449,7 @@ img {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   height: 0.2rem;
-  background: #111;
+  background: #fff;
 }
 
 #portfolio .portfolio::after {
@@ -459,7 +460,7 @@ img {
   color: #dc143c;
   left: 50%;
   padding: 0.1rem 0.3rem;
-  background: #fff;
+  background: #222;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 }
