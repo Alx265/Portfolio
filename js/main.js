@@ -76,8 +76,8 @@ const sr = ScrollReveal({
 sr.reveal('.text-hello', { origin: 'left' });
 sr.reveal('.text-name', { origin: 'right', delay: 200, scale: 0.5 });
 sr.reveal('.text-frontend', { origin: 'right', delay: 400 });
-sr.reveal('.social', { origin: 'left', delay: 500 });
-sr.reveal('#header-social', { origin: 'left', delay: 500 });
+sr.reveal('.social', { origin: 'left', delay: 450 });
+sr.reveal('#header-social', { origin: 'left', delay: 450 });
 
 // About
 sr.reveal('.about-me', { origin: 'top' });
